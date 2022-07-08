@@ -1,1 +1,1 @@
-# The-Coding-Quiz-
+This interactive Javascript quiz allows users to go through a series of questions, with the option to select from four choices in which one of the answers is correct. At the end of the quiz, user are able to generate a highscore and replay the quiz. 
