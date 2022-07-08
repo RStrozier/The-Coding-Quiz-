@@ -15,22 +15,8 @@ let highScore = 0;
 let playerInitial;
 
 // Timer Variables
-let time = document.querySelector(".displayTime");
+let time = document.querySelector("#displayTime");
 let secondsLeft = 60;
-
-// Makes start button disappear and display quiz
-startBtn.addEventListener('click', startQuiz)
-
-document.addEventListener("click", function(){
-    document.querySelector(".container").style.display = "block";
-  });
-
-//click the start button to log that game has began
-function startQuiz(){
-    console.log('Game has begun!');
-}
-
-// THEN a timer starts and I am presented with a question
 var timeleft = 60;
 var timer 
 
@@ -77,8 +63,25 @@ var timer
 		correctAnswer: 'b'
 	}
 ];
-// WHEN I answer a question
-// THEN I am presented with another question
+
+// Makes start button disappear and display quiz
+startBtn.addEventListener('click', startQuiz)
+
+document.addEventListener("click", function(){
+    document.querySelector(".container").style.display = "block";
+  });
+
+//click the start button to log that game has began
+function startQuiz(){
+    console.log('Game has begun!');
+}
+   
+// TO-DO MAKE QUESTIONS DISPLAY
+var random1 = Math.floor(Math.random() * myQuestions.length) ;
+var choice1 = questions[random1];
+document.querySelector('#questions').innerHTML= myQuestions;
+
+// TO-DO WHEN I answer a question THEN I am presented with another question
 function nextQuestion(){}
 
 function answerChoice(){}
