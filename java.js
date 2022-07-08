@@ -77,16 +77,18 @@ function startQuiz(){
 }
    
 // TO-DO MAKE QUESTIONS DISPLAY
+// Print questions on console log
+console.log(JSON.stringify(myQuestions));
 var random1 = Math.floor(Math.random() * myQuestions.length) ;
-var choice1 = questions[random1];
-document.querySelector('#questions').innerHTML= myQuestions;
+var choice1 = myQuestions[random1];
+document.querySelector('#questions').innerHTML= choice1;
 
 // TO-DO WHEN I answer a question THEN I am presented with another question
 function nextQuestion(){}
 
 function answerChoice(){}
 
-// WHEN I answer a question incorrectly
+// WHEN I answer a question incorrectly 
 // THEN time is subtracted from the clock
 
 function correctAnswer(){}
